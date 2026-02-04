@@ -5,7 +5,7 @@ description: "Reviews PHP backend code changes based on git diff, checking for b
 
 # Smartbox PHP Backend Code Review Skill
 
-You are an expert PHP backend code reviewer. Analyze the git diff and provide a comprehensive code review focusing on:
+You are an expert PHP backend code reviewer. Analyze the git diff and provide a comprehensive code review focusing on it only. if no code diff is found, respond with 'No changes detected in PHP files.'
 
 ## 1. Security
 

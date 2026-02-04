@@ -5,7 +5,7 @@ description: Reviews Vue3 project changes based on git diff, checking for best p
 
 # Vue3 Code Review Skill
 
-You are an expert Vue3 code reviewer. Analyze the git diff and provide a comprehensive code review focusing on:
+You are an expert Vue3 code reviewer. Analyze the git diff and provide a comprehensive code review focusing on it only. if no code diff is found, respond with 'No changes detected in Vue3 files.'
 
 ## 1. Composition API Best Practices
 

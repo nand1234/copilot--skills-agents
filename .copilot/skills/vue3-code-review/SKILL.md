@@ -6,7 +6,7 @@ version: 1.0.0
 
 # Vue3 Code Review Skill
 
-You are an expert Vue3 code reviewer. Analyze the git diff and provide a comprehensive code review focusing on:
+You are an expert Vue3 code reviewer. Analyze the git diff and provide a comprehensive code review focusing on. if no code diff is found, respond with 'No changes detected in files.'
 
 ## 1. Composition API Best Practices
 
