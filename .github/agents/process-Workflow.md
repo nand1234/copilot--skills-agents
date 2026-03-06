@@ -26,7 +26,20 @@
 ## steps to follow when creating a new workflow. 
 ---
   1. ask user about the workflow they want to create. Get as much detail as possible about what they want, why they want it, and how they will use it.
-  2. ask user to choose programming language and tools based on the user's needs and preferences. e.g python
+  2. All workflows **must** be implemented as a **Python-based project**. Set up the project with the following standard structure:
+     ```
+     workflow-<name>/
+     ├── main.py            # Entry point — orchestrates the workflow steps
+     ├── steps/             # One .py module per workflow step
+     │   └── step_1.py
+     ├── tests/             # pytest test files, one per step / test case
+     │   └── test_step_1.py
+     ├── requirements.txt   # Python dependencies (include pytest by default)
+     └── README.md          # Brief description and usage instructions
+     ```
+  3. Use **pytest** for all tests (listed in `requirements.txt`). Tests must be runnable with `pytest tests/`.
+  4. Every step defined in Section 5 must map to a function in `steps/` and have at least one corresponding test in `tests/`.
+  5. The workflow is not considered complete until `pytest tests/` passes with no failures.
 ---
 
 
@@ -137,6 +150,7 @@ END ✓
 - **Who or what does it:** [Person / tool / system]
 - **Input needed:** [What this step needs to start]
 - **Output produced:** [What this step hands to the next step]
+- **Python module:** `steps/step_1.py` — function `run(input) -> output`
 - **Must complete before:** Step 2
 
 ---
