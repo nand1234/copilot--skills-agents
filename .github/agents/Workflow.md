@@ -22,6 +22,14 @@
 10. [Run Log](#10-run-log)
 11. [Notes & Decisions](#11-notes--decisions)
 
+
+## steps to follow when creating a new workflow. 
+---
+  1. ask user about the workflow they want to create. Get as much detail as possible about what they want, why they want it, and how they will use it.
+  2. ask user to choose programming language and tools based on the user's needs and preferences. e.g python
+---
+
+
 ---
 
 ## 1. What This Workflow Does
